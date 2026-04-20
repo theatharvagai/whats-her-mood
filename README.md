@@ -6,6 +6,8 @@
   <br />
   <h1>🌸 What's Her Mood? 🌸</h1>
   <p><h3><em>Solving every man's ultimate mystery: "What mood is my girlfriend in today?"</em></h3></p>
+  <br />
+  <img src="./dashbaord-screenshot.png" alt="Dashboard Screenshot" width="800" style="border-radius: 20px; box-shadow: 0px 4px 12px rgba(0,0,0,0.1);"/>
 </div>
 
 ---

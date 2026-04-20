@@ -13,9 +13,9 @@
   --color-yellow: #FDFD96;
   --color-grey: #F5F5F5;
 
-  --clay-shadow-base: 8px 8px 16px rgba(0, 0, 0, 0.06), -8px -8px 16px rgba(255, 255, 255, 1);
-  --clay-inner-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.8), inset -3px -3px 6px rgba(0, 0, 0, 0.04);
-  --clay-pressed: inset 4px 4px 8px rgba(0, 0, 0, 0.08), inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  --clay-shadow-base: 8px 8px 16px rgba(0, 0, 0, 0.15), -8px -8px 16px rgba(255, 255, 255, 1);
+  --clay-inner-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.8), inset -3px -3px 6px rgba(0, 0, 0, 0.08);
+  --clay-pressed: inset 4px 4px 8px rgba(0, 0, 0, 0.12), inset -4px -4px 8px rgba(255, 255, 255, 0.9);
 }
 
 * {
@@ -111,3 +111,13 @@ p {
 .mt-4 { margin-top: 16px; }
 .mb-4 { margin-bottom: 16px; }
 .p-4 { padding: 16px; }
+
+@keyframes fadeBlink {
+  0% { opacity: 0; transform: scale(0.98); }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-blink {
+  animation: fadeBlink 0.4s ease-out forwards;
+}

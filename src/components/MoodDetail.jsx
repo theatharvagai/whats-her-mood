@@ -7,7 +7,7 @@ export default function MoodDetail({ selectedDate, records }) {
   const colorBg = info.colorClass.split(" ")[0] || "bg-yellow"; 
 
   return (
-    <div className={`clay-card ${colorBg}`} style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', textAlign: 'center', height: '100%', justifyContent: 'center' }}>
+    <div key={selectedDate.toString()} className={`clay-card animate-blink ${colorBg}`} style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', textAlign: 'center', height: '100%', justifyContent: 'center' }}>
       <h2 style={{fontSize: '24px'}}>{format(selectedDate, 'EEEE, MMMM d, yyyy')}</h2>
       <div style={{padding: '8px 24px', borderRadius: '24px', background: 'rgba(255,255,255,0.5)', fontWeight: 'bold'}}>
         Phase: {info.phase}

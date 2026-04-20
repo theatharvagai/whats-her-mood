@@ -11,7 +11,7 @@ const MonthView = ({ titleDate, selectedDate, setSelectedDate, records }) => {
   const placeholders = Array.from({ length: startDay }).map((_, i) => <div key={`empty-${i}`} className="p-2"></div>);
 
   return (
-    <div className="clay-card flex-col flex" style={{flex: 1, minWidth: '320px'}}>
+    <div className="clay-card flex-col flex" style={{flex: 1, minWidth: '360px', padding: '16px'}}>
       <h4 className="text-center mb-4 text-dark" style={{fontSize: '20px'}}>{format(titleDate, 'MMMM yyyy')}</h4>
       <div style={{display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '8px', textAlign: 'center'}}>
         {['Su','Mo','Tu','We','Th','Fr','Sa'].map(d => <div key={d} style={{fontWeight: 'bold', fontSize: '14px', color: 'var(--text-light)', marginBottom: '8px'}}>{d}</div>)}
@@ -26,7 +26,9 @@ const MonthView = ({ titleDate, selectedDate, setSelectedDate, records }) => {
               key={day.toString()}
               onClick={() => setSelectedDate(day)}
               style={{
-                aspectRatio: '1',
+                width: '38px',
+                height: '38px',
+                margin: '0 auto',
                 borderRadius: '50%',
                 border: 'none',
                 cursor: 'pointer',
