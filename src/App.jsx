@@ -33,7 +33,6 @@ function App() {
     <div style={{padding: '32px', maxWidth: '1440px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '40px'}}>
       <header className="text-center" style={{paddingBottom: '20px', borderBottom: '2px dashed rgba(0,0,0,0.1)'}}>
         <h1 style={{fontSize: '48px', color: 'var(--text-dark)', letterSpacing: '-1px'}}>Cycle & Mood Predictor</h1>
-        <p style={{fontSize: '20px', color: 'var(--text-light)'}}>Light Clay Aesthetic Dashboard • ML Powered Insights</p>
       </header>
 
       <div style={{display: 'flex', gap: '32px', flexWrap: 'wrap', flexDirection: 'row'}}>
@@ -99,6 +98,16 @@ function App() {
             </tbody>
           </table>
         </div>
+      </div>
+
+      <div className="mt-4 clay-card" style={{padding: '32px'}}>
+        <h3 className="mb-4 text-center" style={{fontSize: '28px'}}>Terminology Glossary</h3>
+        <ul style={{fontSize: '16px', lineHeight: '1.6', color: '#444', listStyleType: 'disc', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '12px'}}>
+          <li><strong>Libido:</strong> A person's overall sexual drive or desire for sexual activity.</li>
+          <li><strong>PMS (Premenstrual Syndrome):</strong> Physical and emotional symptoms that occur one to two weeks before a period (mood swings, tender breasts, food cravings, fatigue).</li>
+          <li><strong>Estrogen:</strong> The primary female sex hormone. High levels generally boost mood, energy, and sociability.</li>
+          <li><strong>Progesterone:</strong> A hormone released after ovulation. As its levels rise and drop, it can make someone feel drowsy, sluggish, or emotionally sensitive.</li>
+        </ul>
       </div>
     </div>
   );

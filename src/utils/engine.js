@@ -122,7 +122,7 @@ export const getDayInfo = (targetDate, records) => {
   } else if (dayOfCycle < ovulationDay - 2) {
     return {
       phase: 'Follicular',
-      colorClass: 'bg-green clay-card', // Wait, we have bg-mint or bg-blue? Let's use bg-mint for follicular
+      colorClass: 'bg-mint clay-card', // Fixed to match index.css class
       percentages: { Happy: 60, Motivated: 30, Sad: 5, Horny: 15, Calm: 50 },
       sentence: "Her estrogen is rising! She's likely feeling motivated, energetic, and happy today."
     };

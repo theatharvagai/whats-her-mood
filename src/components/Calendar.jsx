@@ -32,16 +32,16 @@ const MonthView = ({ titleDate, selectedDate, setSelectedDate, records }) => {
                 borderRadius: '50%',
                 border: 'none',
                 cursor: 'pointer',
-                fontWeight: isSelected ? '700' : '500',
+                fontWeight: isSelected ? '800' : '500',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: isSelected ? 'inset 3px 3px 6px rgba(0,0,0,0.1)' : '4px 4px 8px rgba(0,0,0,0.05), -4px -4px 8px rgba(255,255,255,0.8)',
-                border: isToday ? '3px solid #666' : '1px solid rgba(255,255,255,0.7)',
+                boxShadow: isSelected ? 'inset 4px 4px 8px rgba(0,0,0,0.5)' : '4px 4px 8px rgba(0,0,0,0.05), -4px -4px 8px rgba(255,255,255,0.8)',
+                border: isSelected ? '3px solid #111' : (isToday ? '3px dashed #777' : '1px solid rgba(255,255,255,0.7)'),
                 color: 'var(--text-dark)',
                 fontSize: '16px',
                 transition: 'all 0.2s',
-                ...(isSelected ? { transform: 'scale(0.95)' } : {})
+                ...(isSelected ? { transform: 'scale(1.05)' } : {})
               }}
               className={`hover:scale-110 ${info.colorClass.split(" ")[0]}`}
               title={info.phase}
